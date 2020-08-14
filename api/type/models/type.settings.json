@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "name": "Type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "men",
+        "women"
+      ]
+    },
+    "products": {
+      "via": "type",
+      "collection": "product"
+    }
+  }
+}
